@@ -1,0 +1,7 @@
+LLM ---- Large language Model
+ex: chatgpt, gemini, openAi, copilot, claude
+
+MCP Servers: Playwright Mcp Servers
+
+
+AI

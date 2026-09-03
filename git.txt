@@ -1,0 +1,2 @@
+when teh folder is empty: git clone httpsUrl
+grab teh latesstChnges from gitHub: git pull
