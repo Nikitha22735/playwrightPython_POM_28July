@@ -1,0 +1,10 @@
+{
+    "positiveCreds": {
+        "email": "trainingplaywright@gmail.com",
+        "password": "Welcome@04"
+    },
+    "negitiveCreds": {
+        "email": "trainingplaywright@gmail.com",
+        "password": "Welcome@04"
+    }
+}
