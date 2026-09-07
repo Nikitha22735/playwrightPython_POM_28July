@@ -1,0 +1,16 @@
+1. HTML
+
+-- pip install pytest-html
+execution command: pytest -m home --headed -v -n 2 --html=report.html
+launching: Start report.html
+
+
+2. allure
+
+pip install allure-pytest
+execution command: pytest -m home --headed -v -n 2 --alluredir=allure-results
+
+launching:
+    m1:   allure serve allure-results
+    m2: allure generate allure-results -o allure-report --clean
+    opening: allure open allure-report
