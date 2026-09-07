@@ -1,2 +1,7 @@
 when teh folder is empty: git clone httpsUrl
-grab teh latesstChnges from gitHub: git pull
+grab teh latesstChnges from gitHub: git pull origin main
+get the branch and changes History; Git status
+
+1. git add .
+2. git commit -m "message"
+3. git push
