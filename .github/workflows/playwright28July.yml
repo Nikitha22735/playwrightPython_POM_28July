@@ -8,11 +8,16 @@ on:
     branches:
       - main
   workflow_dispatch:
+  schedule:
+    - cron: '30 21 15 9 *'  # minutes hr day mnth weekDay   --UTC timezone
 
 
 jobs:
   test:
     runs-on: ubuntu-latest
+    env:
+      usname: ${{vars.AMAZONUSERNAME}}
+      pwValues: ${{secrets.AMAZONPW}}
 
     steps:
       # 1️⃣ Checkout repository
