@@ -8,6 +8,11 @@ on:
     branches:
       - main
   workflow_dispatch:
+  # workflow_run:
+  #   workflows:
+  #     - playwright python automation 1 july UAT
+  #   types:
+  #     - completed
   schedule:
     - cron: '30 21 15 9 *'  # minutes hr day mnth weekDay   --UTC timezone
     - cron: '30 21 * 9 4'  # minutes hr day mnth weekDay   --UTC timezone
@@ -16,6 +21,7 @@ on:
 
 jobs:
   test:
+    # if: ${{ github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success' }}
     runs-on: ubuntu-latest
     env:
       usname: ${{vars.AMAZONUSERNAME}}
