@@ -1,0 +1,11 @@
+playwright
+pytest
+pytest-playwright
+python-dotenv
+openpyxl
+pytest-xdist
+pytest-html
+allure-pytest
+
+
+# pip install -r requirements.txt
