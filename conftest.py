@@ -22,7 +22,7 @@ def pytest_runtest_makereport(item):
             allure.attach(page.screenshot(),name="failedpage")
 
 
-def pytest_sessionstart(session):
+# def pytest_sessionstart(session):
     
-    with open("allure-results/environment.properties", "w") as f:
-        f.write("regression build123\n")
+#     with open("allure-results/environment.properties", "w") as f:
+#         f.write("regression build123\n")

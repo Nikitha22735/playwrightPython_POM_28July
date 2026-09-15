@@ -22,4 +22,5 @@ def test_validateTheVisibilityofPageComponents(page:Page, navigateToAmazon):
     homePageObj.validateTheVisibilityOfSearchBar()
     homePageObj.validateTheVisibilityOfCartIcon()
     homePageObj.validateTheVisibilityOfAmazonLogo()
+   
     
