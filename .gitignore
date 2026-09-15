@@ -1,0 +1,6 @@
+.pytest_cache
+pages\__pycache__
+report.html
+test_api\__pycache__
+tests\__pycache__
+reports.txt
