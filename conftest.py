@@ -26,3 +26,13 @@ def pytest_runtest_makereport(item):
     
 #     with open("allure-results/environment.properties", "w") as f:
 #         f.write("regression build123\n")
+
+
+
+# @pytest.fixture()
+# def page():
+#     with sync_playwright() as playwright:
+#         browser = playwright.chromium.launch(headless=False)
+#         context = browser.new_context(viewport={'width':1000,'height':400})
+#         page = context.new_page()
+#         yield page
