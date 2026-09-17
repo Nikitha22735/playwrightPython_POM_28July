@@ -87,4 +87,12 @@ def test_postApi(playwright):
     responseBody = response.json()
     print(responseBody["id"])
 
+
+# def test_trad(page):
+    # with sync_playwright() as playwright:
+        # browser = playwright.chromium.launch()
+        # context = browser.new_context()
+        # page= context.new_page()
+
+
     

@@ -5,3 +5,17 @@ MCP Servers: Playwright Mcp Servers
 
 
 AI
+
+
+app database
+
+1. account table
+2. product
+
+===================
+1. sqlite3
+2. sql
+3.Oracle
+4. postgress
+5.Snowflake
+6.MongoDB........
