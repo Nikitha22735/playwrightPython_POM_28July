@@ -45,7 +45,7 @@ def test_offlinemode():
 
 
 
-@pytest.mark.av
+# @pytest.mark.av
 def test_screenShots():
     with sync_playwright() as playwright:
         browser = playwright.chromium.launch(headless=False)
@@ -56,3 +56,20 @@ def test_screenShots():
         # page.screenshot(path="screenshots/img2.png",full_page=True)
         # page.get_by_text("START").screenshot(path="screenshots/img3.png")
         page.locator('//input[@id="name"]/parent::div').screenshot(path="screenshots/img4.png")
+
+
+from PIL import Image, ImageChops
+# @pytest.mark.av
+def test_visualRegression():
+    pixel1 = Image.open("screenshots\\img1.png")
+    # pixel2 = Image.open("screenshots\\img2.png")
+    pixel2 = Image.open("screenshots\\img1.img")
+    differnce = ImageChops.difference(pixel1,pixel2)
+    print(differnce)
+    assert differnce.getbbox() is None
+
+
+
+
+
+
