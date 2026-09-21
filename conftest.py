@@ -60,10 +60,10 @@ def cookies():
         expect(page.get_by_role("heading", name="Dashboard")).to_be_visible()
         context.storage_state(path='testData\\auth.json')
 
-@pytest.mark.av
-def page(browser):
-    # with sync_playwright() as playwright:
-    #     browser = playwright.chromium.launch(headless=False)
-        context = browser.new_context(storage_state='testData\\auth.json')
-        page = context.new_page()
-        yield page
+# @pytest.mark.av
+# def page(browser):
+#     # with sync_playwright() as playwright:
+#     #     browser = playwright.chromium.launch(headless=False)
+#         context = browser.new_context(storage_state='testData\\auth.json')
+#         page = context.new_page()
+#         yield page
