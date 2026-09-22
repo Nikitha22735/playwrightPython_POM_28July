@@ -19,3 +19,75 @@ app database
 4. postgress
 5.Snowflake
 6.MongoDB........
+
+======================
+
+
+debuging 
+---headed mode
+-- screenshots in allure
+-- set PWDEBUG=1
+-- page.pause()
+
+
+=================POM=================
+1. tests
+2. pages
+3. testData, .env
+4.utils
+5. pytest.ini
+6. conftest
+7. requirements.txt
+8.allure reporting
+9. .github/workflows
+
+
+
+
+
+============================BDD================================
+
+1. feature 
+2. stepdefinition
+2. pages
+3. testData, .env
+4.utils
+5. pytest.ini
+6. conftest
+7. requirements.txt
+8.allure reporting
+9. .github/workflows
+
+
+feature:
+
+background: Given launch amazon and click on signinbtn
+
++ve login
+
+scenario: valida the positive login scenario
+steps:
+
+-when user enters the emailId "+ve emailID"
+-And user clicks on continue btn
+-And user enters password "+ve password"
+-And user cliks on submit btn
+- Then validate the visbility of search bar
+- And validate visbility of amazon logo
+- Amd validate the visbility of cart icon
+
+-ve login
+
+scenario: valida the negitive login scenario
+steps:
+- user enters the emailId "+ve emailID"
+- user clicks on continue btn
+- user enters password "-ve password"
+- user cliks on submit btn
+- validate the visbility of incorrect pw message
+
+
+
+
+
+

@@ -5,7 +5,7 @@ import pytest
 from pages.homePage import homePage
 # Page, Context, Browser, Playwright
 
-@pytest.mark.home
+# @pytest.mark.home
 @pytest.mark.smoke
 @pytest.mark.regression
 @allure.feature("home screen testcases")
