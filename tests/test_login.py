@@ -1,7 +1,7 @@
 from playwright.sync_api import Page, expect
 import pytest
 from pages.loginPage import loginPage
-from utils import jsonhandling
+from utils.jsonhandling import jsonhandling
 
 
 @pytest.mark.login
@@ -21,7 +21,7 @@ def test_validatePositiveLoginWithValidCredentials(page: Page, navigateToAmazon)
     
     # Step 3: Wait for authentication screen to load
     loginPageObj.validateEmailFieldVisible()
-    
+    # page.pause()
     # Step 4: Enter valid email address
     data = jsonhandling('testData\\creds.json')
     loginPageObj.enterEmailOrMobile(data["positiveCreds"]["email"])
@@ -32,7 +32,7 @@ def test_validatePositiveLoginWithValidCredentials(page: Page, navigateToAmazon)
     # Step 6: Verify password field is visible and enter password
     loginPageObj.validatePasswordFieldVisible()
     loginPageObj.enterPassword("Welcome@04")
-    
+    # page.pause()
     # Step 7: Click Sign In button
     loginPageObj.clickSignInBtn()
     

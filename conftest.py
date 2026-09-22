@@ -6,9 +6,9 @@ import pytest
 @pytest.fixture()
 def navigateToAmazon(page: Page):
     page.goto("https://www.amazon.in/")
-    countOfBtns = page.locator('//*[contains(text(),"Shopping")]').count()
-    if countOfBtns>0:
-        page.locator('//*[contains(text(),"Shopping")]').click()
+    # countOfBtns = page.locator('//*[contains(text(),"Shopping")]').count()
+    # if countOfBtns>0:
+    #     page.locator('//*[contains(text(),"Shopping")]').click()
 
 
 @pytest.hookimpl(hookwrapper=True)
