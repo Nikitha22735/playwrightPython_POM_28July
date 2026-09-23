@@ -71,7 +71,7 @@ steps:
 -when user enters the emailId "+ve emailID"
 -And user clicks on continue btn
 -And user enters password "+ve password"
--And user cliks on submit btn and QA2
+-And user cliks on submit btn and from QA1
 - Then validate the visbility of search bar
 - And validate visbility of amazon logo
 - Amd validate the visbility of cart icon
